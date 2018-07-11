@@ -1,0 +1,8 @@
+var program = require('commander');
+
+program
+    .usage('[command] [options]')
+    .version('0.1.0')
+    .command('install [name]', 'install one or more packages')
+    .command('list [options]', 'list packages installed', {isDefault: true})
+    .parse(process.argv);

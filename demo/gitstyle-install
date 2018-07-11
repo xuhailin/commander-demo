@@ -1,0 +1,9 @@
+#!/usr/bin/env node --harmony
+
+var program = require('commander');
+
+program
+ .option('-n, --name <name>', 'install name')
+ .parse(process.argv);
+
+console.log('name: %s', program.name);

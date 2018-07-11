@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+var program = require('commander');
+
+function list(val) {
+  return val.split(',');
+}
+program
+    .option('-l, --list <items>', 'list', list)
+    .parse(process.argv);
+
+console.log(' list: %s', program.list);

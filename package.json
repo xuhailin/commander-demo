@@ -1,0 +1,23 @@
+{
+  "name": "commander-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "bin": {
+    "default": "./example/bin/default"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-gitstyle": "node ./demo/gitstyle install"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "colors": "^1.3.0",
+    "commander": "^2.16.0"
+  }
+}
